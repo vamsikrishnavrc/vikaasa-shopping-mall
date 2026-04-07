@@ -1,0 +1,67 @@
+.happenings-page {
+  min-height: 100vh;
+  padding: 150px 50px 70px;
+  background: linear-gradient(180deg, #f7f4ff 0%, #fff8fb 100%);
+}
+
+.happenings-page-hero {
+  max-width: 820px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.happenings-page-hero h1 {
+  margin: 0 0 14px;
+  font-size: 2.7rem;
+  color: #1f2940;
+}
+
+.happenings-page-hero p {
+  margin: 0;
+  font-size: 1.06rem;
+  line-height: 1.8;
+  color: #5b6475;
+}
+
+.happenings-page-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.offer-search-box {
+  max-width: 500px;
+  margin: 0 auto 32px;
+}
+
+.offer-search-box input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #d7c8f6;
+  border-radius: 12px;
+  outline: none;
+  font-size: 1rem;
+  background: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .happenings-page-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .happenings-page {
+    padding: 130px 20px 50px;
+  }
+
+  .happenings-page-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .happenings-page-grid {
+    grid-template-columns: 1fr;
+  }
+}
